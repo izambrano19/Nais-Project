@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* EMPIEZA EL HEADER*/
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.container_menu {
+    height: 80px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(199, 199, 199, 0.67);
+}
+
+.container_menu.abajo {
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+.container_menu a {
+    font-weight: 600;
+
+}
+
+.container_menu.abajo a {
+    color: white;
+}
+
+
+.container_menu.abajo #selected {
+    background-color: white;
+    color: black;
+}
+
+
+.container_menu #selected:hover {
+    color: #b11111;
+}
+
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo2 img {
+    width: 100px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.pie_pagina .logo a {
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+}
+
+
+.menu ul li a {
+    font-size: 16px;
+    color: black;
+}
+
+.menu ul li a:hover {
+    color: #b11111;
+}
+
+#selected {
+    background-color: black;
+    padding: 10px 40px;
+
+    border-radius: 50px;
+    color: white;
+}
+
+.menu nav #logo2 {
+    display: none;
+}
+
+.menu #btn_menu {
+    display: none;
+}
+
+.container__cover {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cover {
+    max-width: 1500px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@keyframes move-vector {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+
+/*Haciendo la página Responsive*/
+
+@media screen and (max-width: 1700px) {
+
+    .container__cover {
+        background-position: 50%;
+    }
+
+}
+
+@media screen and (max-width: 605px) {
+
+    .menu nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background-color: white;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    .container_menu.abajo nav {
+        background-color: black;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .menu ul li {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    #selected {
+        background-color: black;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .container_menu.abajo #selected {
+        background-color: white;
+
+
+    }
+
+    .menu nav #logo2 {
+        display: block;
+        font-size: 45px;
+        color: black;
+    }
+
+    .container_menu.abajo #logo2 {
+        color: white;
+    }
+
+    #back_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .menu #btn_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .menu #btn_menu:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+/*IMAGEN DE PORTADA*/
+
+
+.contenedorBox {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    justify-content: center;
+}
+
+
+.box1 {
+    padding: 5%;
+    background-color: #EDF2F4;
+    text-decoration: none;
+    color: black;
+}
+
+.box1:hover {
+    background-color: #8D99AE;
+    text-decoration: none;
+    color: black;
+}
+
+/*TERMINA HEADER*/
+
+
+@media (max-width: 720px) {
+    .container_menu nav > ul > li a:hover {
+        transform: scale(1.1);
+    }
+}
+
+/*ESTILO DE SEARCH - BARRA DE BÚSQUEDA*/
+
+.buscar {
+    width: 60%;
+}
+
+.buscarinput {
+    width: 80%;
+
+}
+
+.group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 28px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    margin: auto 0;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.input::-webkit-input-placeholder {
+    color: #9e9ea7;
+}
+
+.input::-moz-placeholder {
+    color: #9e9ea7;
+}
+
+.input:-ms-input-placeholder {
+    color: #9e9ea7;
+}
+
+.input::-ms-input-placeholder {
+    color: #9e9ea7;
+}
+
+.input::placeholder {
+    color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: rgba(234, 76, 137, 0.4);
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+/*HASTA AQUÍ TERMINA EL ESTILO DE SEARCH - BARRA DE BÚSQUEDA*/
+
+/*CONTENIDO BODY*/
+
+/*CARRUSEL*/
+.img-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #76c0be;
+}
+
+.img-3 .contenedor {
+    background-color: blue;
+    margin: auto;
+}
+
+.img-3 img {
+    height: 300px;
+    padding: 0 20px;
+
+}
+
+/*
+@media (max-width: 720px) {
+    .container_menu nav > ul > li a:hover {
+        transform: scale(1.1);
+    }
+}
+*/
+
+/*SLIDER*/
+
+.container-slider {
+
+    background-color: #76c0be;
+    width: 100%;
+    padding: 30px;
+}
+
+.slider {
+    margin: auto;
+    position: relative;
+    height: 300px;
+    background-color: blue;
+}
+
+.slider li {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+
+}
+
+.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slider li:first-child {
+    opacity: 1;
+}
+
+.slider li:target {
+    opacity: 1;
+}
+
+.cambio {
+    text-align: center;
+    margin: 20px;
+}
+
+.cambio li {
+    display: inline-block;
+    text-align: center;
+}
+
+.cambio li a {
+    display: inline-block;
+    color: aliceblue;
+    background-color: black;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+
+
+/*FOOTER*/
+
+.pie-pagina {
+    background-color: #276E90;
+    color: black;
+    width: 100%;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    height: 60px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    margin-bottom: 25px;
+}
+
+
+.pie-pagina .grupo-1 .box p {
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

@@ -1,0 +1,123 @@
+*{
+	margin: 0;/* El margin se utiliza para crear espacio alrededor de los elementos.*/
+	padding: 0;/* El padding se usa para crear un espacio alredededor del contenido de un elemento*/
+	box-sizing: border-box;/* El box-sizing nos permite poner relleno y el borde en el ancho y alto de un elemento */
+}
+/* Style the body */
+body { /* Si solo ponemos body, directamente abarcamos todo el body. */
+    font-family: Arial;/* El font-family sirve para colocar el tipo de letra que quieras usar. */
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header { /*.header es una clase, las clases empiezan por punto. */
+    padding: 60px;
+    text-align: center;/* El text-align sirve para alinear el texto según tu criterio (left, right, center, justify). */
+    background: #1abc9c;/* El background abreviatura de background-color, background-image, entre otros y sirve para poner el fondo. */
+    color: white;/* El color es para poner el color de letra que queramos usar. */
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;/* El display sirve para especificar el comportamiento de visualización del elemento. */
+  background-color: #333;/* El background-color sirve para poner un fondo, a color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;/* El text-decoration sirve para agregar o quitar decoración  al texto. */
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover { /* El hover se usa para seleccionar elementos cuando para el moouse sobre ellos. */
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;/* El flex-wrap especifica si los elementos flexibles deben ajustarse o no. */
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;/* El flex permite establecer la longitud flexible en elementos flexibles. */
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;    
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+h2 a{
+    color: #5832a0;
+}
+
+.img{
+    width: 30%;/* El width establece el ancho de un elemento. */
+    margin: auto;
+    display: block;
+    
+}
+
+
+.p1{
+    font-weight: bolder; /* El font-weight sirve para colocar los caracteres delgados o gruesos en el texto. */
+    float: left;
+    text-align: left;
+    width: 100%;
+    margin: 1% 0px;
+    font-size: 130%;/* El font-size sirve para colocar el tamaño de los caracteres. */
+
+}
+.p2{
+    float: left;
+    text-align: justify;
+    width: 100%;
+    margin: 1% 0px;
+    font-size: 110%;/* El font-size sirve para colocar el tamaño de los caracteres. */
+    
+    
+    
+}
+.row{
+    display: none;
+    
+}
+
+#index{
+    
+    display: flex;/*Float -> display: block*/
+}
+
+#fnavitem {
+    background-color: #ddd;
+    color: black;
+    
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {/* El @media sirve para poner un bloque de propiedades CSS, en caso de que cierta condición se cumpla, en este caso es que si la pantalla está como máximo hasta 700px las siguientes clases se colocarán en columna. */
+  .row, .navbar {   
+    flex-direction: column;/* El flex-direction especifica la dirección de los elementos flexibles. */
+  }
+}

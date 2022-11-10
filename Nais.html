@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+    <title>Nais</title>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector(".container_menu");
+            header.classList.toggle("abajo", window.scrollY > 0)
+            console.log("entra");
+        })
+
+    </script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!--<div class="container_menu">
+
+            <a class="logo-header" href=""><img src="img/logo-1def.png" alt=""></a>
+
+            <div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input placeholder="SEARCH" type="search" class="input">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="">IDIOMS</a></li>
+                        <li><a href="">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>-->
+        <div class="container_menu">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-1def.png"></a>
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <div id="logo2">
+                        <a href="index.html"><img src="img/logo-1def.png"></a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html" id="selected">HOMEPAGE</a></li>
+                        <li><a href="secondpage.html">SECOND PAGE</a></li>
+                        <li><a href="aboutus.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container__cover"></div>
+    </main>
+    <script src="js/script.js"></script>
+
+    <div>
+        <section class="contenedorPrincipal">
+
+            <!--    <div class="contenedorBox">
+                <a class="box1" href="#">
+                    <b>🔍︎ PROTEÍNAS</b>
+                </a>
+                <a class="box1" href="#">
+                    <b>🔍︎ FÁRMACO</b>
+                </a>
+            </div>
+-->
+        </section>
+    </div>
+
+    <!--
+    <div class="img-3">
+        <div class="contenedor">
+            <a href=""><img src="img/c1.jpg" alt="Imagen-1"></a>
+            <a href=""><img src="img/c2.jpg" alt="Imagen-2"></a>
+            <a href=""><img src="img/c3.jpeg" alt="Imagen-3"></a>
+        </div>
+    </div>
+
+    <br>
+-->
+    <div class="container-slider">
+        <ul class="slider">
+            <li id="slide1"><img src="img/c1.jpg" alt="Imagen-1"></li>
+            <li id="slide2"><img src="img/c2.jpg" alt="Imagen-2"></li>
+            <li id="slide3"><img src="img/c3.jpeg" alt="Imagen-3"></li>
+        </ul>
+
+        <ul class="cambio">
+
+            <li><a href="#slide1">1</a></li>
+            <li><a href="#slide2">2</a></li>
+            <li><a href="#slide3">3</a></li>
+
+        </ul>
+    </div>
+
+    <footer class="pie-pagina">
+
+        <div class="grupo-1">
+
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logo-1def.png" alt="Logo NAIS">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="box">
+                <h2>INFORMACIÓN DE CONTACTO</h2>
+                <p>UBICACIÓN: C/XXX XX XXXX</p>
+                <p>TELÉFONO: XXX XX XX XX</p>
+                <p>CORREO: XXXXXXX@XXXXXX</p>
+            </div>
+
+            <div class="box">
+                <h2>NORMATIVA LEGAL</h2>
+                <p>PROTECCIÓN DE DATOS</p>
+                <p>POLÍTICA DE COOKIES</p>
+                <p>AVISO LEGAL</p>
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>NaIs</b> - Todos los Derechos Reservados.</small>
+        </div>
+
+    </footer>
+</body>
+
+</html>
