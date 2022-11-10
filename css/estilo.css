@@ -24,7 +24,7 @@ body {
 .container_menu {
     height: 80px;
     width: 100%;
-    padding: 40px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     background-color: rgba(199, 199, 199, 0.67);
@@ -161,6 +161,18 @@ body {
 
     .container__cover {
         background-position: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .group {
+        width: 10%;
+    }
+
+    .input {
+        width: 10%;
     }
 
 }
