@@ -177,7 +177,7 @@ body {
 
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 695px) {
 
     .menu nav {
         position: fixed;
@@ -263,110 +263,43 @@ body {
     width: 100%;
     display: flex;
     position: absolute;
-    top: 90%;
+    bottom: 0;
     justify-content: center;
 }
 
-
-.box1 {
-    padding: 5%;
-    background-color: #EDF2F4;
+.box1{
+    width: 30%;
+    height: 30vh;
+    background-image: 
+        url(../img/noticias/biomedicina1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     text-decoration: none;
     color: black;
+    
 }
 
 .box1:hover {
-    background-color: #8D99AE;
-    text-decoration: none;
-    color: black;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../img/noticias/biomedicina1.jpg);
 }
 
-/*TERMINA HEADER*/
 
+
+/*TERMINA HEADER*/
 
 @media (max-width: 720px) {
     .container_menu nav > ul > li a:hover {
         transform: scale(1.1);
     }
 }
-
-/*ESTILO DE SEARCH - BARRA DE BÚSQUEDA*/
-
-.buscar {
-    width: 60%;
-}
-
-.buscarinput {
-    width: 80%;
-
-}
-
-.group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    line-height: 28px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-    width: 50%;
-    margin: auto 0;
-}
-
-.input {
-    width: 100%;
-    height: 40px;
-    line-height: 28px;
-    padding: 0 1rem;
-    padding-left: 2.5rem;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    outline: none;
-    background-color: #f3f3f4;
-    color: #0d0c22;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-}
-
-.input::-webkit-input-placeholder {
-    color: #9e9ea7;
-}
-
-.input::-moz-placeholder {
-    color: #9e9ea7;
-}
-
-.input:-ms-input-placeholder {
-    color: #9e9ea7;
-}
-
-.input::-ms-input-placeholder {
-    color: #9e9ea7;
-}
-
-.input::placeholder {
-    color: #9e9ea7;
-}
-
-.input:focus,
-input:hover {
-    outline: none;
-    border-color: rgba(234, 76, 137, 0.4);
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-}
-
-.icon {
-    position: absolute;
-    left: 1rem;
-    fill: #9e9ea7;
-    width: 1rem;
-    height: 1rem;
-}
-
-/*HASTA AQUÍ TERMINA EL ESTILO DE SEARCH - BARRA DE BÚSQUEDA*/
 
 /*CONTENIDO BODY*/
 
@@ -388,14 +321,8 @@ input:hover {
     padding: 0 20px;
 
 }
+/* FIN CARRUSEL*/
 
-/*
-@media (max-width: 720px) {
-    .container_menu nav > ul > li a:hover {
-        transform: scale(1.1);
-    }
-}
-*/
 
 /* CONTAINER COMUN*/
 
